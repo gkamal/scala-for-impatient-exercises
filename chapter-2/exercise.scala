@@ -21,7 +21,7 @@ for(i <- 10 to 0 by -1) println(i)
 
 def countdown(n: Int) = for(i <- n to 0 by -1) println(i)
 
-print("countdown(10)")
+println("countdown(10)")
 countdown(10)
 
 // 6. Write for loop for computing the product of the Unicode codes of all letters in a string
@@ -31,7 +31,7 @@ def productUnicodeOfLetters(s: String) = {
   result
 }
 
-print("productUnicodeOfLetters(Hello)=",productUnicodeOfLetters("Hello"));
+println("productUnicodeOfLetters(Hello)=",productUnicodeOfLetters("Hello"));
 
 // 7. Solve 6. without writing a loop
 
@@ -41,6 +41,8 @@ def productUnicodeOfLettersWithoutLoop(s: String) = {
   s.foreach(accumulate)
   result
 }
+
+println("productUnicodeOfLettersWithoutLoop(Hello)=",productUnicodeOfLettersWithoutLoop("Hello"));
 
 // 8. write a product(s: String) that coputes the product as described 
 // - already done
@@ -52,6 +54,8 @@ def product(s: String) = {
   }
   productInner(s,1l)
 }
+
+println("product(Hello)=",product("Hello"));
 
 //10. Write a function that computres x**n where n is an integer
 
@@ -70,12 +74,12 @@ def power(x:Double, n:Int) : Double = {
   }
 }
 
-print("power(2,0)=", power(2,0))
-print("power(2,1)=", power(2,1))
-print("power(2,3)=", power(2,3))
-print("power(2,4)=", power(2,4))
+println("power(2,0)=", power(2,0))
+println("power(2,1)=", power(2,1))
+println("power(2,3)=", power(2,3))
+println("power(2,4)=", power(2,4))
 
-print("power(2,-4)=", power(2,-4))
+println("power(2,-4)=", power(2,-4))
 
 
 
